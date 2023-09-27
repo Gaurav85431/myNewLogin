@@ -35,6 +35,10 @@ app.post('/login', async (req, res) => {
 
 });
 
+// see connection::
+app.get('/get', (req, res) => {
+  res.send("Running");
+})
 
 app.listen(4000, function () {
   console.log("Server started");
